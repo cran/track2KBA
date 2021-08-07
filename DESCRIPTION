@@ -1,6 +1,6 @@
 Package: track2KBA
 Title: Identifying Important Areas from Animal Tracking Data
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(
     person("Martin", "Beal", email = "martinbeal88@gmail.com", role = "cre", comment = c(ORCID = "0000-0003-1654-1410")),
     person("Steffen", "Oppel", email = "steffen.oppel@gmail.com", role = "aut", comment = c(ORCID = "0000-0003-1654-1410")),
@@ -26,13 +26,13 @@ LazyData: true
 RoxygenNote: 7.1.1
 BugReports: https://github.com/BirdLifeInternational/track2kba/issues
 Suggests: adehabitatLT, doParallel, knitr, maps, Matching, move,
-        parallel, rmarkdown, tinytest
+        parallel, rmarkdown, tinytest, rgeos, rgdal (>= 1.5-0)
 VignetteBuilder: knitr
 Imports: adehabitatHR, dplyr, foreach, geosphere, ggplot2, lubridate,
-        magrittr, maptools, methods, purrr, raster, rgeos, rgdal (>=
-        1.5-0), rlang, sf (>= 0.7-4), sp (>= 1.4-1), tidyr
+        magrittr, maptools, methods, purrr, raster, rlang, sf (>=
+        0.7-4), sp (>= 1.4-1), tidyr
 NeedsCompilation: no
-Packaged: 2021-08-04 08:30:19 UTC; Martim Bill
+Packaged: 2021-08-07 15:19:36 UTC; Martim Bill
 Author: Martin Beal [cre] (<https://orcid.org/0000-0003-1654-1410>),
   Steffen Oppel [aut] (<https://orcid.org/0000-0003-1654-1410>),
   Maria Dias [aut] (<https://orcid.org/0000-0002-7281-4391>),
@@ -44,4 +44,4 @@ Author: Martin Beal [cre] (<https://orcid.org/0000-0003-1654-1410>),
   Ben Lascelles [ctb]
 Maintainer: Martin Beal <martinbeal88@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-08-05 07:50:01 UTC
+Date/Publication: 2021-08-07 23:10:01 UTC
