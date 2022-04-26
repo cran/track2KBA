@@ -7,16 +7,16 @@
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/BirdLifeInternational/track2kba/workflows/R-CMD-check/badge.svg)](https://github.com/BirdLifeInternational/track2kba/actions)
 [![Coverage
-Status](https://codecov.io/gh/BirdLifeInternational/track2kba/branch/master/graph/badge.svg)](https://codecov.io/gh/BirdLifeInternational/track2kba/)
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/track2KBA)](https://cran.r-project.org/package=track2KBA)
+Status](https://codecov.io/gh/BirdLifeInternational/track2kba/branch/master/graph/badge.svg)](https://app.codecov.io/gh/BirdLifeInternational/track2kba)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/track2KBA)](https://cran.r-project.org/package=track2KBA)
+[![CRAN_Status_Badge](https://cranlogs.r-pkg.org/badges/track2KBA)](https://cran.r-project.org/package=track2KBA)
 <!-- badges: end -->
 
 This package is comprised of functions that facilitate the
 identification of areas of importance for biodiversity, such as Key
 Biodiversity Areas (KBAs), based on individual tracking data. For
 further detail concerning the method itself, please refer to this
-[paper](https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.12411) by
-Lacelles et al. (2016).
+[paper](https://doi.org/10.1111/2041-210X.13713) by Beal et al. (2021).
 
 Key functions include utilities to estimate individual core use areas,
 the level of representativeness of the tracked sample, and overlay
@@ -28,7 +28,13 @@ data set, and splitting and summarizing individual foraging trips.
 
 ------------------------------------------------------------------------
 
-You can download the development version from
+You can download the stable version from CRAN with:
+
+``` r
+install.packages("track2KBA")
+```
+
+Or you can download the development version from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -55,7 +61,7 @@ fields, and an ID field (i.e. individual animal, track, or trip).
 library(track2KBA) # load package
 
 data(boobies)
-# ?boobies  # for some background on the available data set 
+# ?boobies  # for some background info on the example data set 
 
 dataGroup <- formatFields(
   dataGroup = boobies, 
@@ -308,7 +314,7 @@ This map shows the number or proportion of individual animals in the
 population overlapping in space. The red lines indicate the ‘potential
 site’; that is, the areas used by a significant proportion of the local
 population, given the representativeness of the sample of tracked
-individuals. In this case, since representativeness is &gt;90%, any area
+individuals. In this case, since representativeness is \>90%, any area
 used by 10% or more of the population is considered important (see
 Lascelles et al. 2016 for details). The orange dot is the colony
 location and the black line is the coastline.
@@ -349,17 +355,20 @@ around the breeding island.
 
 ------------------------------------------------------------------------
 
-### Reference
+### Package reference
 
 If you use any functions in this package for your work, please use the
 following citation:
 
-Martin Beal, Steffen Oppel, Jonathan Handley, Lizzie Pearmain, Virginia
-Morera-Pujol, Mark Miller, Phil Taylor, Ben Lascelles, & Maria Dias.
-(2020, May 13). *BirdLifeInternational/track2kba: First Release (Version
-0.5.0). Zenodo. <https://doi.org/10.5281/zenodo.3823902>*
+Beal, M., Oppel, S., Handley, J., Pearmain, E. J., Morera-Pujol, V.,
+Carneiro, A. P. B., Davies, T. E., Phillips, R. A., Taylor, P. R.,
+Miller, M. G. R., Franco, A. M. A., Catry, I., Patrício, A. R., Regalla,
+A., Staniland, I., Boyd, C., Catry, P., & Dias, M. P. (2021). track2KBA:
+An R package for identifying important sites for biodiversity from
+tracking data. Methods in Ecology and Evolution, n/a(n/a).
+<https://doi.org/10.1111/2041-210X.13713>
 
-### Example data
+### Example data reference
 
 Oppel, S., Beard, A., Fox, D., Mackley, E., Leat, E., Henry, L.,
 Clingham, E., Fowler, N., Sim, J., Sommerfeld, J., Weber, N., Weber, S.,
@@ -367,10 +376,19 @@ Bolton, M., 2015. *Foraging distribution of a tropical seabird supports
 Ashmole’s hypothesis of population regulation. Behav Ecol Sociobiol 69,
 915–926. <https://doi.org/10.1007/s00265-015-1903-3>*
 
-Thanks to Annalea Beard for kindly sharing these example data for use in
-the package.
+### Other references
+
+Lascelles, B. G., Taylor, P. R., Miller, M. G. R., Dias, M. P., Oppel,
+S., Torres, L., Hedd, A., Corre, M. L., Phillips, R. A., Shaffer, S. A.,
+Weimerskirch, H., & Small, C. (2016). Applying global criteria to
+tracking data to define important areas for marine conservation.
+Diversity and Distributions, 22(4), 422–431.
+<https://doi.org/10.1111/ddi.12411>
 
 ### Acknowledgements
+
+Thanks to Annalea Beard for kindly sharing these example data for use in
+the package.
 
 This project has received funding from the European Union’s Horizon 2020
 research and innovation programme under the Marie Skłodowska-Curie grant

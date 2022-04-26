@@ -6,6 +6,9 @@ knitr::opts_chunk$set(
 )
 
 ## ---- eval = FALSE------------------------------------------------------------
+#  install.packages("track2KBA")
+
+## ---- eval = FALSE------------------------------------------------------------
 #  install.packages("devtools", dependencies = TRUE)
 #  devtools::install_github("BirdLifeInternational/track2kba", dependencies=TRUE) # development version - add argument 'build_vignettes = FALSE' to speed it up
 

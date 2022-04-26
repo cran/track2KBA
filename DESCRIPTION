@@ -1,8 +1,8 @@
 Package: track2KBA
 Title: Identifying Important Areas from Animal Tracking Data
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: c(
-    person("Martin", "Beal", email = "martinbeal88@gmail.com", role = "cre", comment = c(ORCID = "0000-0003-1654-1410")),
+    person("Martin", "Beal", email = "martinbeal88@gmail.com", role = c("aut","cre"), comment = c(ORCID = "0000-0003-1654-1410")),
     person("Steffen", "Oppel", email = "steffen.oppel@gmail.com", role = "aut", comment = c(ORCID = "0000-0003-1654-1410")),
     person("Maria", "Dias", email = "maria.dias@birdlife.org", role = "aut", comment = c(ORCID = "0000-0002-7281-4391")),
     person("Mark", "Miller", email = "mark.gr.miller@gmail.com", role = "ctb"),
@@ -17,23 +17,23 @@ Description: Functions for preparing and analyzing animal tracking data,
     the population level and therefore of conservation interest. Areas identified 
     using this package may be checked against global or regionally-defined criteria,
     such as those set by the Key Biodiversity Area program. The method
-    published herein is an optimized and updated version of the method described in Lascelles
-    et al. 2016 <doi:10.1111/ddi.12411>.
+    published herein is described in full in Beal et al. 2021 <doi:10.1111/2041-210X.13713>.
 Depends: R (>= 2.10)
 License: LGPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
 BugReports: https://github.com/BirdLifeInternational/track2kba/issues
-Suggests: adehabitatLT, doParallel, knitr, maps, Matching, move,
-        parallel, rmarkdown, tinytest, rgeos, rgdal (>= 1.5-0)
+Suggests: adehabitatLT, doParallel, knitr, parallel, rmarkdown,
+        tinytest
 VignetteBuilder: knitr
 Imports: adehabitatHR, dplyr, foreach, geosphere, ggplot2, lubridate,
-        magrittr, maptools, methods, purrr, raster, rlang, sf (>=
-        0.7-4), sp (>= 1.4-1), tidyr
+        magrittr, maps, maptools, Matching, methods, move, purrr,
+        raster, rgdal (>= 1.5-0), rgeos, rlang, sf (>= 0.7-4), sp (>=
+        1.4-1), tidyr
 NeedsCompilation: no
-Packaged: 2021-08-07 15:19:36 UTC; Martim Bill
-Author: Martin Beal [cre] (<https://orcid.org/0000-0003-1654-1410>),
+Packaged: 2022-04-26 14:58:38 UTC; Martim Bill
+Author: Martin Beal [aut, cre] (<https://orcid.org/0000-0003-1654-1410>),
   Steffen Oppel [aut] (<https://orcid.org/0000-0003-1654-1410>),
   Maria Dias [aut] (<https://orcid.org/0000-0002-7281-4391>),
   Mark Miller [ctb],
@@ -44,4 +44,4 @@ Author: Martin Beal [cre] (<https://orcid.org/0000-0003-1654-1410>),
   Ben Lascelles [ctb]
 Maintainer: Martin Beal <martinbeal88@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-08-07 23:10:01 UTC
+Date/Publication: 2022-04-26 16:00:02 UTC
