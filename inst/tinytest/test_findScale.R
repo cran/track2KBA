@@ -2,11 +2,12 @@ library(track2KBA)
 library(lubridate)
 library(sp)
 library(dplyr)
+library(rgdal)
 
 dat <- data.frame(Longitude = c(1, 1.01, 1.02, 1.04, 1.05, 1), 
                   Latitude =  c(1, 1.01, 1.02, 1.03, 1.021, 1),
                   ID = rep("A", 6),
-                  DateTime = as.character(
+                  DateTime = format(
                     ymd_hms("2021-01-01 00:00:00") + hours(0:5))
 )
 
@@ -69,7 +70,7 @@ expect_true(findScale(trips2)$step_length == findScale(trips)$step_length,
 dat <- data.frame(Longitude = c(1, 1.1, 2, 2.1, 1.5, 1), 
                   Latitude =  c(1, 1.01, 1.02, 1.03, 1.021, 1),
                   ID = rep("A", 6),
-                  DateTime = as.character(
+                  DateTime = format(
                     ymd_hms("2021-01-01 00:00:00") + hours(0:5))
 )
 
