@@ -77,7 +77,6 @@
 #' @importFrom rlang .data
 #' @importFrom stats median
 #' @importFrom sp SpatialPoints SpatialPointsDataFrame spDistsN1
-#' @importFrom maptools spRbind
 #' @importFrom dplyr mutate
 #'
 tripSplit <- function(
@@ -97,9 +96,13 @@ tripSplit <- function(
     stop(
       "colony object has multiple locations. Did you mean to set nests=TRUE")
     }
-
-  dataGroup <- dataGroup %>%
-      mutate(DateTime = lubridate::ymd_hms(.data$DateTime)) %>%
+  
+  if(!inherits(dataGroup$DateTime, "POSIXct")){
+    dataGroup <- dataGroup %>%
+      mutate(DateTime = lubridate::ymd_hms(.data$DateTime))
+  }
+  
+  dataGroup <- dataGroup  %>%
       mutate(tripID = .data$ID) %>%
       arrange(.data$ID, .data$DateTime)
 
@@ -136,7 +139,7 @@ tripSplit <- function(
       duration = duration, gapLimit = gapLimit, nests=nests, verbose = verbose)
 
     if (nid == 1) {Trips <- TrackOut} else {
-      Trips <- maptools::spRbind(Trips, TrackOut)
+      Trips <- rbind(Trips, TrackOut)
       }
   }
 
