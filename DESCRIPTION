@@ -1,9 +1,9 @@
 Package: track2KBA
 Title: Identifying Important Areas from Animal Tracking Data
-Version: 1.1.1
+Version: 1.1.2
 Authors@R: c(
     person("Martin", "Beal", email = "martinbeal88@gmail.com", role = c("aut","cre"), comment = c(ORCID = "0000-0003-1654-1410")),
-    person("Steffen", "Oppel", email = "steffen.oppel@gmail.com", role = "aut", comment = c(ORCID = "0000-0003-1654-1410")),
+    person("Steffen", "Oppel", email = "steffen.oppel@gmail.com", role = "aut", comment = c(ORCID = "0000-0002-8220-3789")),
     person("Maria", "Dias", email = "maria.dias@birdlife.org", role = "aut", comment = c(ORCID = "0000-0002-7281-4391")),
     person("Mark", "Miller", email = "mark.gr.miller@gmail.com", role = "ctb"),
     person("Phillip", "Taylor",email = "philiprhodritaylor@googlemail.com", role = "ctb"),
@@ -31,9 +31,9 @@ Imports: adehabitatHR, dplyr, foreach, geosphere, ggplot2, lubridate,
         magrittr, maps, Matching, methods, move, purrr, raster (>=
         3.6-3), rlang, sf (>= 0.7-4), sp (>= 1.5-0), tidyr
 NeedsCompilation: no
-Packaged: 2023-09-27 11:20:01 UTC; marti
+Packaged: 2024-07-01 10:20:59 UTC; marti
 Author: Martin Beal [aut, cre] (<https://orcid.org/0000-0003-1654-1410>),
-  Steffen Oppel [aut] (<https://orcid.org/0000-0003-1654-1410>),
+  Steffen Oppel [aut] (<https://orcid.org/0000-0002-8220-3789>),
   Maria Dias [aut] (<https://orcid.org/0000-0002-7281-4391>),
   Mark Miller [ctb],
   Phillip Taylor [ctb],
@@ -43,4 +43,4 @@ Author: Martin Beal [aut, cre] (<https://orcid.org/0000-0003-1654-1410>),
   Ben Lascelles [ctb]
 Maintainer: Martin Beal <martinbeal88@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-09-27 11:40:02 UTC
+Date/Publication: 2024-07-01 10:40:07 UTC

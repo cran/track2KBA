@@ -1,8 +1,8 @@
-4cf6849384e9b652243b84a88f9ee39f *DESCRIPTION
+be42e645d5058a8b34944fe6719b799e *DESCRIPTION
 5a3385cc847fb79f6d40d8941957d469 *NAMESPACE
 af2a5358fa0a4eab8bc02f2a38c685a1 *NEWS.md
 78434a2dd6d9057fcdd968810a41cef8 *R/data.R
-240025410e8ac642f93bab6a9663b45c *R/estSpaceUse.r
+b74ab47e0a496e4208297376d40674be *R/estSpaceUse.r
 5f94947d3083a392da799b607d8708ef *R/findScale.R
 06a1d54dc49c2073ceafdb8b9eed8394 *R/findSite.R
 8e0a32ad876b87762174e6a833a32b4a *R/formatFields.R
@@ -22,7 +22,7 @@ ddf5b758a8167d9148589b4d3b66fad8 *build/vignette.rds
 49b3b399e4c9fe4140f7501267ae2b07 *inst/CITATION
 011ddc77e908e008a0f22f7e6c466d13 *inst/doc/track2kba_workflow.R
 5902d4c9284ce4c01a9105ccf9865f4a *inst/doc/track2kba_workflow.Rmd
-46c9f0190c08384b101d7d128c19b0a1 *inst/doc/track2kba_workflow.html
+ce110c517b15d5dd7d7d7b2f63122399 *inst/doc/track2kba_workflow.html
 78c32acc9d9ff06418ef932436ec1a0b *inst/tinytest/boobies_testdata.csv
 cbf320244b42165a2e3930282614164a *inst/tinytest/movebank_testdata.csv
 bfbf56c2eaa419ede57032ed00872536 *inst/tinytest/test_estSpaceUse.R
@@ -40,7 +40,7 @@ ff8323aed63977e84a71abbce9740820 *inst/tinytest/test_repAssess.R
 497c023420668f9b8eeed5fd20062f8d *inst/tinytest/test_tripSummary.R
 6901a8f3a46cff4f1598be3fea816edc *man/KDE_example.Rd
 b001742ffa31c59898f76d3a7722c4e5 *man/boobies.Rd
-1ef8053917910c22f6c2e56ef4c5f5f4 *man/estSpaceUse.Rd
+d717be277e027151fa77f9d864355c3e *man/estSpaceUse.Rd
 c2d3fd4403b3fd2888df52181ff194db *man/figures/KBA_sp_plot.png
 ec999a2da8b41eb76aedaafba10fee5c *man/figures/estSpaceUse-1.png
 c44395cf03534ac7a36d15954ca1f96b *man/figures/findScale-1.png
